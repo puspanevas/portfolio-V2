@@ -1,0 +1,49 @@
+.header {
+    height: 50vh;
+    position: relative;
+}
+
+/* Define the default style */
+.logo-link {
+    display: inline-block;
+    transition: all 0.5s cubic-bezier(0.7, 0, 0.3, 1); /* Animation properties */
+}
+
+/* Define the hover style */
+/* .logo-link:hover {
+    
+    
+} */
+
+
+/* Menu container for circle background */
+.menu-container {
+    position: relative;
+}
+
+/* Styling for the orange circle */
+.menu-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -10; /* Ensures it stays behind the menu icon */
+}
+
+/* Styling for the menu icon */
+.size-6 {
+    width: 24px;
+    height: 24px;
+    z-index: 10; /* Ensures it appears above the circle */
+}
+
+@media only screen and (max-width: 600px) {
+    .header {
+        height: 60vh;
+    }
+}
+
+
